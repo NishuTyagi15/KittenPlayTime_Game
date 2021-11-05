@@ -22,7 +22,7 @@ html, body {
 .stem_scopes {
     width: 35%;
 }
-.present, .mode, .off, .on, .logo{
+.presents, .mode, .off, .on, .logo{
     margin-top: 2rem;
     color: #0c65eb;
     font-family: sans-serif;
