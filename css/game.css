@@ -51,14 +51,15 @@ html, body {
     position: relative;
     top: -0.8rem;
     left: 0.8rem;
-    width: 4.3vw;
+    width: 5.5vw;
     height: 7.2vh;
     border-radius: 40px;
     border: 1px solid #fff;
+    text-align: center;
 }
 input {
+    outline: none;
     font-size: 1.9rem;
-    padding: 1px 10px;
 }
 .volume, .logout {
     width: 3vw;
@@ -94,19 +95,76 @@ input {
     width: 6%;
     position: fixed;
     left: 35rem;
-    top: 15.5rem;
+    top: 15.5rem;   
 }
+.cat1{
+    animation-name: catmove1;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes catmove1{
+    from {
+        left: 35rem;
+    }
+
+    to {
+        left: 33rem;
+    }    
+}
+
 .cat2 {
     left: 29.8rem;
     top: 19.8rem;
+    animation-name: catmove2;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes catmove2{
+    from {
+        left: 29.8rem;
+    }
+
+    to {
+        left: 27.8rem;
+    }   
 }
 .cat3 {
     left: 38rem;
     top: 21rem;
+    animation-name: catmove3;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+@keyframes catmove3{
+    from {
+        left: 38rem;
+    }
+
+    to {
+        left: 36rem;
+    }   
 }
 .cat4 {
     left: 32rem;
     top: 25rem;
+    animation-name: catmove4;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes catmove4{
+    from {
+        left: 32rem;
+    }
+
+    to {
+        left: 30rem;
+    }    
 }
 .helper_text {
     text-align: center;
@@ -114,6 +172,18 @@ input {
     font-size: 1.1rem;
     position: fixed;
     right: 33rem;
+    animation-name: textmove;
+    animation-duration: 2200ms;
+    animation-timing-function: ease-out;
+}
+@keyframes textmove{
+    from {
+        right: 0rem;
+    }
+
+    to {
+        right: 33rem;
+    }    
 }
 .bcat1, .bcat2, .bcat3, .bcat4 {
     width: 6%;
@@ -121,17 +191,71 @@ input {
     right: 33rem;
     top: 15.5rem;
 }
+.bcat1 {
+    animation-name: bcatmove1;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove1{
+    from {
+        right: 33rem;
+    }
+
+    to {
+        right: 35rem;
+    }    
+}
 .bcat2 {
     right: 27.8rem;
     top: 19.8rem;
+    animation-name: bcatmove2;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove2{
+    from {
+        right: 27.8rem;
+    }
+
+    to {
+        right: 29.8rem;
+    }    
 }
 .bcat3 {
     right: 36rem;
     top: 21rem;
+    animation-name: bcatmove3;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove3{
+    from {
+        right: 36rem;
+    }
+
+    to {
+        right: 38rem;
+    }    
 }
 .bcat4 {
     right: 30rem;
     top: 25rem;
+    animation-name: bcatmove4;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove4{
+    from {
+        right: 30rem;
+    }
+
+    to {
+        right: 32rem;
+    }    
 }
 .answer {
     width: 30vw;
@@ -143,10 +267,54 @@ input {
     background-color: #f31eb3;
     border-radius: 50px;
 }
-
-.text_bkittens {
-    /* animation-name: moveY;
-    animation-duration: 800ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
+audio {
+    width: 0;
+    height: 0;
+}
+.btn0, .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+    background-color: maroon;
+    border: 1px solid lightgrey;
+    border-radius: 18px;
+    width: 2vw;
+    height: 4vh;
+    font-size: 1.25rem;
+    color: #fff;
+    position: relative;
+    margin-right: 0.4rem;
+    left: 1.5rem;
+    top: 0.8rem;
+    cursor: pointer;
+}
+.btn5, .btn6, .btn7, .btn8, .btn9 {
+    top: 3.5rem;
+    left: -10.2rem;
+}
+.btn0:hover, .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover, .btn7:hover, .btn8:hover, .btn9:hover {
+    background-color: #ff9100;
+}
+.answer1 {
+    position: relative;
+    left: 14rem;
+    background-color: #fff;
+    height: 6.2vh;
+    width: 5vw;
+    font-size: 1.5rem;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    border-radius: 8px;
+}
+.enter {
+    position: relative;
+    left: 14rem;
+    background-color: #006400;
+    height: 6.5vh;
+    width: 5.6vw;
+    font-size: 1.5rem;
+    border: 2px solid maroon;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.enter:hover {
+    background-color: #ff9100;
 }

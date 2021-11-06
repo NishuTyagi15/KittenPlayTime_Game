@@ -109,3 +109,7 @@ html, body {
     top: 31rem;
     right: 33rem;
 }
+audio {
+    width: 0;
+    height: 0;
+}
