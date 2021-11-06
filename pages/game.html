@@ -25,8 +25,6 @@
             <input 
                 class="rating1" 
                 max="5" 
-                oninput="this.style.setProperty('--value', this.value)" 
-                step="0.5" 
                 type="text" 
                 value="0">
         </div>
@@ -57,21 +55,25 @@
                     <img class="bcat4" src="../Assets/kitten-1.svg">
                 </div>
             </div>
+            <div class="star_div" id="outputtext"></div>
         </div>
-        <div class="answer">
-            <button class="btn0">0</button>
-            <button class="btn1">1</button>
-            <button class="btn2">2</button>
-            <button class="btn3">3</button>
-            <button class="btn4">4</button>
-            <button class="btn5">5</button>
-            <button class="btn6">6</button>
-            <button class="btn7">7</button>
-            <button class="btn8">8</button>
-            <button class="btn9">9</button>
-            <input class="answer1" type="text" value="?">
-            <button class="enter">Enter</button>
-        </div>
+        <form class="answer" name="val">
+            <div class="btn_input">
+                <span class="btn" onclick="document.val.txt.value +='0'">0</span>
+                <span class="btn" onclick="document.val.txt.value +='1'">1</span>
+                <span class="btn" onclick="document.val.txt.value +='2'">2</span>
+                <span class="btn" onclick="document.val.txt.value +='3'">3</span>
+                <span class="btn" onclick="document.val.txt.value +='4'">4</span>
+                <span class="btn" onclick="document.val.txt.value +='5'">5</span>
+                <span class="btn" onclick="document.val.txt.value +='6'">6</span>
+                <span class="btn" onclick="document.val.txt.value +='7'">7</span>
+                <span class="btn" onclick="document.val.txt.value +='8'">8</span>
+                <span class="btn" onclick="document.val.txt.value +='9'">9</span>
+            </div>
+            <input class="answer1" id="userInput" type="text" name="txt" readonly="">
+            <button class="enter" id="btn">Enter</button>
+        </form>
     </div>
+    <script src="../js/game.js"></script>
 </body>
 </html>
