@@ -1,1 +1,1 @@
-# Kitten PlayTime Game - Introduction Page
+# Kitten PlayTime Game - Main Game Page
